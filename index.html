@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClaveFuertePro - Generador de Contraseñas Seguras</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="matrix-background"></div>
+    <header>
+        <nav class="navbar fixed-navbar">
+            <div class="logo-container">
+                <img src="assets/ClaveFuertePro_Matrix.png" alt="ClaveFuertePro" class="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Productos</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#descargar">Descargar</a></li>
+                <li><a href="#funcionalidades">Herramientas & Funcionalidades</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#gratis">Comienza gratis</a></li>
+                <li><a href="#empresas">Ventas para Empresas</a></li>
+                <li><a href="#login">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+    <!-- Hero Section --> 
+    <section class="hero animated">
+        <h1 class="demo">Demo</h1>
+        <h2>Genera contraseñas seguras en un clic</h2>
+        <p>Evita que tus cuentas sean vulneradas con contraseñas débiles. Usa ClaveFuertePro para obtener claves fuertes y personalizadas al instante.</p>
+        <button id="generar">Generar Contraseña</button>
+        <input type="text" id="password" readonly>
+        <button id="copiar">Copiar</button>
+        
+    </section>
+
+
+
+
+
+    <!-- Importancia de una contraseña segura -->
+    <section class="importance animated-box">
+        <h2>¿Por qué es importante una contraseña segura?</h2>
+        <p>En el mundo digital actual, los ataques cibernéticos son más sofisticados que nunca. Usar una contraseña débil te hace vulnerable a hackers que pueden acceder a tu información personal, cuentas bancarias y datos sensibles.</p>
+        <ul>
+            <li><img src="assets/candado-abierto.png" class="emoji"> <strong>Evita ataques de fuerza bruta:</strong> ClaveFuertePro genera contraseñas difíciles de descifrar.</li>
+            <li><img src="assets/computadora.png" class="emoji"> <strong>Protege tus cuentas:</strong> No más claves débiles como "123456" o "password".</li>
+            <li><img src="assets/rayo.png" class="emoji"> <strong>Genera claves en segundos:</strong> Seguridad sin complicaciones.</li>
+        </ul>
+    </section>
+
+    <!-- Funcionalidades -->
+    <section class="features animated-box" id="funcionalidades">
+        <h2>Todo lo que necesitas en un administrador de contraseñas</h2>
+        <div class="feature">
+            <h3><img src="assets/llave.png" class="emoji"> Fácil</h3>
+            <p>Potente seguridad en minutos. Genera, almacena y administra tus contraseñas de manera sencilla.</p>
+        </div>
+        <div class="feature">
+            <h3><img src="assets/monitor.png" class="emoji"> Cómodo</h3>
+            <p>Contraseñas ilimitadas y acceso multiplataforma para navegadores, móviles y escritorio.</p>
+        </div>
+        <div class="feature">
+            <h3><img src="assets/candado-cerrado.png" class="emoji"> Seguro</h3>
+            <p>Protege tus cuentas bancarias, correos y redes sociales con cifrado de extremo a extremo.</p>
+        </div>
+    </section>
+
+    <!-- Seguridad -->
+    <section class="security animated-box">
+        <h2>Seguridad confiable y probada</h2>
+        <p>La seguridad de código abierto garantiza confianza y transparencia. Miles de expertos revisan y auditan ClaveFuertePro.</p>
+        <ul>
+            <li><img src="assets/candado-seguro.png" class="emoji"> Cifrado de extremo a extremo: Solo tú puedes acceder a tus contraseñas.</li>
+            <li><img src="assets/documento.png" class="emoji"> Auditorías de seguridad verificadas por terceros.</li>
+        </ul>
+    </section>
+
+    <!-- Planes -->
+    <section class="planes animated-box">
+        <h2>Elige tu plan ideal</h2>
+        <div class="planes-container">
+            <div class="plan">
+                <h3>Plan Básico</h3>
+                <p class="precio">S/ 10</p>
+                <ul>
+                    <li>✔ Generador de contraseñas básicas</li>
+                    <li>✔ Historial limitado (10 claves)</li>
+                    <li>✔ Soporte por WhatsApp</li>
+                    <li>✔ Descarga directa</li>
+                </ul>
+                <a href="#" class="btn-comprar">Comprar</a>
+            </div>
+            <div class="plan destacado">
+                <h3>Plan Profesional</h3>
+                <p class="precio">S/ 20</p>
+                <ul>
+                    <li>✔ Generador avanzado con filtros</li>
+                    <li>✔ Historial de hasta 50 claves</li>
+                    <li>✔ Modo seguro (más protección)</li>
+                    <li>✔ Soporte prioritario</li>
+                    <li>✔ Descarga directa</li>
+                </ul>
+                <a href="#" class="btn-comprar">Comprar</a>
+            </div>
+            <div class="plan">
+                <h3>Plan Empresarial</h3>
+                <p class="precio">S/ 30</p>
+                <ul>
+                    <li>✔ Hasta 5 usuarios</li>
+                    <li>✔Filtros personalizados</li>
+                    <li>✔ Historial ilimitado</li>
+                    <li>✔ Cifrado empresarial</li>
+                    <li>✔ Asesoría exclusiva</li>
+                </ul>
+                <a href="#" class="btn-comprar">Comprar</a>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Call to action -->
+    <section class="cta">
+        <h2>¿Listo para proteger tu mundo digital?</h2>
+        <a href="#" class="btn-comprar">Comprar Ahora</a>
+        <a href="https://wa.me/51907351652" class="btn-whatsapp" target="_blank">Contáctanos por WhatsApp</a>
+    </section>
+
+    <footer>
+
+        <section class="enlaces-finales">
+            <div class="contenedor-enlaces">
+              <a href="#productos">Productos</a>
+              <a href="#empresa">Empresa</a>
+              <a href="#recursos">Recursos</a>
+              <a href="#herramientas">Herramientas & Ayuda</a>
+              <a href="#faq">Preguntas Frecuentes</a>
+              <a href="#terminos">Términos y condiciones</a>
+              <a href="#soporte">Soporte</a>
+              <a href="#contacto">Contacto</a>
+            </div>
+          </section>
+          
+
+
+
+
+
+
+
+
+
+        <p>&copy; 2025 ClaveFuertePro. Todos los derechos reservados.</p>
+    </footer>
+
+    <div class="decoracion-linea"></div>
+
+    <div class="social-icons">
+        <a href="https://github.com" target="_blank"><img src="assets/github.svg" alt="GitHub" class="social-icon"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="assets/instagram.svg" alt="Instagram" class="social-icon"></a>
+        <a href="https://www.facebook.com" target="_blank"><img src="assets/facebook.svg" alt="Facebook" class="social-icon"></a>
+        <a href="https://www.youtube.com" target="_blank"><img src="assets/youtube.svg" alt="YouTube" class="social-icon"></a>
+        <a href="https://wa.me/51907351652" target="_blank"><img src="assets/whatsapp.svg" alt="WhatsApp" class="social-icon"></a>
+    </div>
+
+
+
+
+</body>
+</html>
