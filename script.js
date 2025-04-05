@@ -207,5 +207,55 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// Obtener los elementos
+const btnBasico = document.getElementById("btnBasico");
+const btnProfesional = document.getElementById("btnProfesional");
+const btnEmpresarial = document.getElementById("btnEmpresarial");
+const modal = document.getElementById("modalCompra");
+const cerrarModal = document.getElementById("cerrarModal");
+const btnYape = document.getElementById("btnYape");
+const btnPayPal = document.getElementById("btnPayPal");
+const qrContainer = document.getElementById("qrContainer");
+const paypalContainer = document.getElementById("paypalContainer");
+
+// Mostrar modal de compra cuando se hace clic en los botones de compra
+btnBasico.addEventListener("click", mostrarModal);
+btnProfesional.addEventListener("click", mostrarModal);
+btnEmpresarial.addEventListener("click", mostrarModal);
+
+// Función para mostrar el modal
+function mostrarModal() {
+    modal.style.display = "block";
+}
+
+// Cerrar modal
+cerrarModal.addEventListener("click", () => {
+    modal.style.display = "none";
+});
+
+// Mostrar opciones de pago
+btnYape.addEventListener("click", () => {
+    qrContainer.style.display = "block";
+    paypalContainer.style.display = "none";
+});
+
+btnPayPal.addEventListener("click", () => {
+    qrContainer.style.display = "none";
+    paypalContainer.style.display = "block";
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

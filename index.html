@@ -30,23 +30,16 @@
         </nav>
     </header>
 
-
-
-
-
     <!-- Hero Section --> 
     <section class="hero animated">
         <h1 class="demo">Demo</h1>
         <h2>Genera contraseñas seguras en un clic</h2>
         <p>Evita que tus cuentas sean vulneradas con contraseñas débiles. Usa ClaveFuertePro para obtener claves fuertes y personalizadas al instante.</p>
-        <button id="generar">Generar Contraseña</button>
-        <input type="text" id="password" readonly>
+        <button id="btnGenerar">Generar Contraseña</button>
+        <input type="text" id="passwordOutput" readonly>
         <button id="copiar">Copiar</button>
         
     </section>
-
-
-
 
 
     <!-- Importancia de una contraseña segura -->
@@ -59,6 +52,7 @@
             <li><img src="assets/rayo.png" class="emoji"> <strong>Genera claves en segundos:</strong> Seguridad sin complicaciones.</li>
         </ul>
     </section>
+
 
     <!-- Funcionalidades -->
     <section class="features animated-box" id="funcionalidades">
@@ -77,6 +71,7 @@
         </div>
     </section>
 
+
     <!-- Seguridad -->
     <section class="security animated-box">
         <h2>Seguridad confiable y probada</h2>
@@ -87,48 +82,55 @@
         </ul>
     </section>
 
-    <!-- Planes -->
-    <section class="planes animated-box">
-        <h2>Elige tu plan ideal</h2>
-        <div class="planes-container">
-            <div class="plan">
-                <h3>Plan Básico</h3>
-                <p class="precio">S/ 10</p>
-                <ul>
-                    <li>✔ Generador de contraseñas básicas</li>
-                    <li>✔ Historial limitado (10 claves)</li>
-                    <li>✔ Soporte por WhatsApp</li>
-                    <li>✔ Descarga directa</li>
-                </ul>
-                <a href="#" class="btn-comprar">Comprar</a>
-            </div>
-            <div class="plan destacado">
-                <h3>Plan Profesional</h3>
-                <p class="precio">S/ 20</p>
-                <ul>
-                    <li>✔ Generador avanzado con filtros</li>
-                    <li>✔ Historial de hasta 50 claves</li>
-                    <li>✔ Modo seguro (más protección)</li>
-                    <li>✔ Soporte prioritario</li>
-                    <li>✔ Descarga directa</li>
-                </ul>
-                <a href="#" class="btn-comprar">Comprar</a>
-            </div>
-            <div class="plan">
-                <h3>Plan Empresarial</h3>
-                <p class="precio">S/ 30</p>
-                <ul>
-                    <li>✔ Hasta 5 usuarios</li>
-                    <li>✔Filtros personalizados</li>
-                    <li>✔ Historial ilimitado</li>
-                    <li>✔ Cifrado empresarial</li>
-                    <li>✔ Asesoría exclusiva</li>
-                </ul>
-                <a href="#" class="btn-comprar">Comprar</a>
-            </div>
+
+<!-- Planes -->
+<section class="planes animated-box">
+    <h2>Elige tu plan ideal</h2>
+    <div class="planes-container">
+        <div class="plan">
+            <h3>Plan Básico</h3>
+            <p class="precio">S/ 10</p>
+            <ul>
+                <li>✔ Generador de contraseñas básicas</li>
+                <li>✔ Historial limitado (10 claves)</li>
+                <li>✔ Soporte por WhatsApp</li>
+                <li>✔ Descarga directa</li>
+            </ul>
+
+            <!-- ID para identificar el plan Básico -->
+            <a href="#" class="btn-comprar" id="btnBasico">Comprar</a>
         </div>
-    </section>
-    
+        <div class="plan destacado">
+            <h3>Plan Profesional</h3>
+            <p class="precio">S/ 20</p>
+            <ul>
+                <li>✔ Generador avanzado con filtros</li>
+                <li>✔ Historial de hasta 50 claves</li>
+                <li>✔ Modo seguro (más protección)</li>
+                <li>✔ Soporte prioritario</li>
+                <li>✔ Descarga directa</li>
+            </ul>
+
+            <!-- ID para identificar el plan Profesional -->
+            <a href="#" class="btn-comprar" id="btnProfesional">Comprar</a>
+        </div>
+        <div class="plan">
+            <h3>Plan Empresarial</h3>
+            <p class="precio">S/ 30</p>
+            <ul>
+                <li>✔ Hasta 5 usuarios</li>
+                <li>✔ Filtros personalizados</li>
+                <li>✔ Historial ilimitado</li>
+                <li>✔ Cifrado empresarial</li>
+                <li>✔ Asesoría exclusiva</li>
+            </ul>
+
+            <!-- ID para identificar el plan Empresarial -->
+            <a href="#" class="btn-comprar" id="btnEmpresarial">Comprar</a>
+        </div>
+    </div>
+</section>
+
 
 
     <!-- Call to action -->
@@ -152,16 +154,7 @@
               <a href="#contacto">Contacto</a>
             </div>
           </section>
-          
-
-
-
-
-
-
-
-
-
+        
         <p>&copy; 2025 ClaveFuertePro. Todos los derechos reservados.</p>
     </footer>
 
@@ -176,6 +169,70 @@
     </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal de Compra -->
+<div id="modalCompra" class="modal">
+    <div class="modal-content">
+        <span class="close" id="cerrarModal">&times;</span>
+        <h2>Selecciona tu método de pago</h2>
+        <div class="metodos-pago">
+            <button id="btnYape" class="btn-metodo">Yape</button>
+            <button id="btnPayPal" class="btn-metodo">PayPal</button>
+        </div>
+        <div id="qrContainer" style="display: none;">
+            <h3>Escanea el siguiente código QR para pagar con Yape:</h3>
+            <img src="assets/qr-yape.png" alt="QR Yape" class="qr-image">
+        </div>
+        <div id="paypalContainer" style="display: none;">
+            <h3>Ir a PayPal:</h3>
+            <a href="https://www.paypal.com" target="_blank" class="btn-comprar">Pagar con PayPal</a>
+        </div>
+    </div>
+</div>
+
+<!-- Botones de compra (con ids correspondientes) -->
+<a href="#" class="btn-comprar" id="btnBasico">Comprar</a>
+<a href="#" class="btn-comprar" id="btnProfesional">Comprar</a>
+<a href="#" class="btn-comprar" id="btnEmpresarial">Comprar</a>
 
 
 </body>
