@@ -504,30 +504,69 @@ img[src*="documento.png"] {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro */
+    transition: opacity 0.5s ease-in-out; /* Efecto de transición */
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
+    background-color: #000; /* Fondo negro */
+    color: #00FF00; /* Texto verde estilo Matrix */
+    margin: 10% auto;
+    padding: 30px;
     border: 1px solid #888;
     width: 80%;
     max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.5); /* Sombra verde */
+    animation: fadeIn 0.5s ease-in-out; /* Animación de entrada */
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
+/* Botones dentro del Modal */
+.btn-metodo {
+    background-color: #00FF00; /* Botones verdes */
+    border: none;
+    color: #000;
+    padding: 15px 25px;
+    margin: 10px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-metodo:hover {
+    background-color: #33FF33; /* Efecto de hover */
+}
+
+
+/* Cerrar el modal */
 .close {
-    color: #aaa;
+    color: #00FF00;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #fff;
     text-decoration: none;
-    cursor: pointer;
+}
+
+/* Animación del Modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .metodos-pago {
